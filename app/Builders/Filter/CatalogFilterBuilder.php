@@ -1,18 +1,19 @@
 <?php
 
-/**
- * Created by PhpStorm
- * User: Aleksandr Chorniy
- * Date: 22.10.2019
- * Time: 13:38
- */
 
 namespace App\Builders\Filter;
 
 
+/**
+ * Class CatalogFilterBuilder
+ * @package App\Builders\Filter
+ */
 class CatalogFilterBuilder implements FilterBuilder
 {
 
+    /**
+     * @var Map
+     */
     private $map;
 
     public function __construct()
@@ -40,6 +41,9 @@ class CatalogFilterBuilder implements FilterBuilder
         $this->map->setProperty('elasticProperties');
     }
 
+    /**
+     * @return Map
+     */
     public function getMap(): Map
     {
         return $this->map;

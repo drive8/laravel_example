@@ -3,7 +3,10 @@
 
 namespace App\Builders\Filter;
 
-
+/**
+ * Interface FilterBuilder
+ * @package App\Builders\Filter
+ */
 interface FilterBuilder
 {
     public function properties(): void;
