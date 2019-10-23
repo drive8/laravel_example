@@ -18,7 +18,3 @@
 8. Просмотр, добавление, редактирование, удаление разделов.
 9. Дерево разделов.
 9. Простейший вывод в шаблон.
-
-![alt text](storage/app/public/upload/screenshot_laravel_ex_1.png)
-![alt text](storage/app/public/upload/screenshot_laravel_ex_2.png)
-![alt text](storage/app/public/upload/screenshot_laravel_ex_3.png)
