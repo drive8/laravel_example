@@ -35,7 +35,6 @@ class ExampleServiceProvider extends ServiceProvider
         $this->sections();
         $this->filterProperties();
         $this->products();
-        $this->concreteDecorator();
     }
 
     public function sections()
@@ -63,27 +62,6 @@ class ExampleServiceProvider extends ServiceProvider
         View::composer(['welcome'], function($view){
             $products = Product::orderBy('id')->orderBy('sort')->simplePaginate(10);
             $view->with('products', $products);
-        });
-    }
-
-    public function concreteDecorator()
-    {
-        View::composer(['welcome'], function($view){
-            $result = [];
-
-            // клиентский код может поддерживать как простые компоненты...
-            $simple = new ConcreteComponent;
-            $result[] = "Client: I've got a simple component:";
-            $result[] = "RESULT: " . $simple->operation();
-
-            // ...так и декорированные.
-            // Обратите внимание, что декораторы могут обёртывать не только простые
-            // компоненты, но и другие декораторы.
-            $decorator1 = new ConcreteDecoratorA($simple);
-            $decorator2 = new ConcreteDecoratorB($decorator1);
-            $result[] = "Client: Now I've got a decorated component:";
-            $result[] = "RESULT: " . $decorator2->operation();
-            $view->with('concreteDecorator', $result);
         });
     }
 

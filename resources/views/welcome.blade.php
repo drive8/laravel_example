@@ -90,7 +90,6 @@
                                 @include('main.components.sections', ['sections' => $sections])
                                 @include('main.components.filter', ['properties' => $properties])
                                 @include('main.components.products', ['products' => $products])
-                                @include('main.components.decorator', ['concreteDecorator' => $concreteDecorator])
                             </section>
                         </section>
                     </div>
