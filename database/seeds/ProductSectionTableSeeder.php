@@ -11,8 +11,8 @@ class ProductSectionTableSeeder extends Seeder
      */
     public function run()
     {
-        $sectionCount = 5;
-        $productInSection = 200;
+        $sectionCount = 10;
+        $productInSection = 100;
         $productId = 1;
 
         for($i = 1; $i <= $sectionCount; $i++){

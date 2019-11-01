@@ -8,7 +8,7 @@
                 hidden=""
             @endif
         @endisset
-    >{!! $delimiter ?? "" !!}{{$sectionData->name ?? ""}}</option>
+    >{!! $delimiter ?? " - " !!}{{$sectionData->name ?? ""}}</option>
     @if (count($sectionData->children) > 0)
         @include('main.catalog.sections.partials.sections', [
           'sections' => $sectionData->children,

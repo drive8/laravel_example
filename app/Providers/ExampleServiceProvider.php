@@ -40,7 +40,7 @@ class ExampleServiceProvider extends ServiceProvider
     public function sections()
     {
         View::composer(['welcome'], function($view){
-            $sections = Section::orderBy('active', 'desc')->orderBy('sort')->simplePaginate(3);
+            $sections = Section::orderBy('active', 'desc')->orderBy('sort')->simplePaginate(10);
             $view->with('sections', $sections);
         });
     }

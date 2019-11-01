@@ -11,9 +11,9 @@ class SectionsTableSeeder extends Seeder
      */
     public function run()
     {
-        for($i = 0; $i < 3; $i++){
+        for($i = 1; $i <= 10; $i++){
             DB::table('sections')->insert([
-                'parent_id' => 0,
+                'parent_id' => $i - 1,
                 'sort' => 100,
                 'name' => "section_{$i}",
                 'code' => "section_{$i}",
