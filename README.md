@@ -1,20 +1,20 @@
-**Примеры Laravel 6.3.**
+**Example Laravel 6.3.**
 
-Разворачивание:
+Install:
 1. git clone
 2. composer install
-3. Задать свои конфиги в .env
+3. Set configs db in .env
 4. artisan migrate:refresh --seed 
 5. npm install + npm run dev
 
-Реализованно:
-1. Разделы.
-2. Товары.
-3. Отношение «многие ко многим» для разделов и товаров.
-4. Миграции, сиды.
-5. Концептуальный пример построения объекта фильтра App\Builders\Filter.
-6. Ресурсный роутер '/sections'.
-7. Контроллер App\Http\Controllers\Catalog\SectionController.
-8. Просмотр, добавление, редактирование, удаление разделов.
-9. Дерево разделов.
-9. Простейший вывод в шаблон.
+Realized:
+1. Sections.
+2. Products.
+3. Many-to-many relationship for sections and products.
+4. Migrations, seeds.
+5. Conceptual example of constructing a filter object App\Builders\Filter.
+6. Resource router 'sections'.
+7. Controller App\Http\Controllers\Catalog\SectionController.
+8. Create, read, update, delete sections.
+9. Sections tree.
+10. The simplest output to the template.
